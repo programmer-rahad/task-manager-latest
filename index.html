@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <div id="task-manager">
+        <div class="container">
+            <div class="card">
+                <div class="card-content">
+                    <h2>Task Manager Application</h2>
+                    <form>
+                        <div class="input-field">
+                            <input type="text" id="taskInputField">
+                            <label for="taskInputField">New Task</label>
+                        </div>
+                        <input class="btn" type="submit" value="Add Task">
+                    </form>
+                </div>
+                <div class="card-action">
+                    <h4>Task List</h4>
+                    <div class="filter">
+                        <div class="input-field">
+                            <input type="text" id="taskInputFilter">
+                            <label for="taskInputFilter">Filter</label>
+                        </div>
+                    </div>
+                    <div class="task-list">
+                        <ul class="collection"></ul>
+                        <button class="btn black clear-all">Clear all</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
